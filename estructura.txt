@@ -1,0 +1,290 @@
+.
+├── README.md
+├── app
+│   ├── Http
+│   │   ├── Controllers
+│   │   ├── Middleware
+│   │   └── kernel.php
+│   ├── Models
+│   │   ├── Asignacion.php
+│   │   ├── Departamento.php
+│   │   ├── Impresora.php
+│   │   ├── Llamado.php
+│   │   ├── Pantalla.php
+│   │   ├── Turno.php
+│   │   └── User.php
+│   └── Providers
+│       └── AppServiceProvider.php
+├── artisan
+├── bootstrap
+│   ├── app.php
+│   ├── cache
+│   │   ├── packages.php
+│   │   └── services.php
+│   └── providers.php
+├── composer.json
+├── composer.lock
+├── config
+│   ├── app.php
+│   ├── auth.php
+│   ├── cache.php
+│   ├── database.php
+│   ├── filesystems.php
+│   ├── logging.php
+│   ├── mail.php
+│   ├── queue.php
+│   ├── services.php
+│   └── session.php
+├── database
+│   ├── database.sqlite
+│   ├── factories
+│   │   └── UserFactory.php
+│   ├── migrations
+│   │   ├── 0001_01_01_000000_create_users_table.php
+│   │   ├── 0001_01_01_000001_create_cache_table.php
+│   │   ├── 0001_01_01_000002_create_jobs_table.php
+│   │   ├── 2025_04_02_015839_create_departamentos_table.php
+│   │   ├── 2025_04_02_020213_create_turnos_table.php
+│   │   ├── 2025_04_02_020323_create_configuraciones_table.php
+│   │   ├── 2025_04_02_020428_create_asignaciones_table.php
+│   │   ├── 2025_04_02_033114_create_pantallas_table.php
+│   │   ├── 2025_04_02_033330_create_llamados_table.php
+│   │   └── 2025_04_02_033559_create_impresoras_table.php
+│   └── seeders
+│       ├── DatabaseSeeder.php
+│       ├── DepartamentoSeeder.php
+│       ├── ImpresoraSeeder.php
+│       ├── LlamadoSeeder.php
+│       ├── PantallaSeeder.php
+│       ├── TurnoSeeder.php
+│       └── UsuarioSeeder.php
+├── estructura.txt
+├── package.json
+├── phpunit.xml
+├── public
+│   ├── favicon.ico
+│   ├── index.php
+│   └── robots.txt
+├── resources
+│   ├── css
+│   │   └── app.css
+│   ├── js
+│   │   ├── app.js
+│   │   └── bootstrap.js
+│   └── views
+│       ├── admin
+│       ├── auth
+│       ├── auth.blade.php
+│       ├── layouts
+│       ├── operador.blade.php
+│       ├── pantalla.blade.php
+│       ├── turnos.blade.php
+│       └── welcome.blade.php
+├── routes
+│   ├── admin.php
+│   ├── console.php
+│   ├── llamados.php
+│   ├── operador.php
+│   ├── pantalla.php
+│   ├── turnos.php
+│   └── web.php
+├── storage
+│   ├── app
+│   │   ├── private
+│   │   └── public
+│   ├── framework
+│   │   ├── cache
+│   │   ├── sessions
+│   │   ├── testing
+│   │   └── views
+│   └── logs
+│       └── laravel.log
+├── tests
+│   ├── Feature
+│   │   └── ExampleTest.php
+│   ├── TestCase.php
+│   └── Unit
+│       └── ExampleTest.php
+├── vendor
+│   ├── autoload.php
+│   ├── bin
+│   │   ├── carbon
+│   │   ├── carbon.bat
+│   │   ├── patch-type-declarations
+│   │   ├── patch-type-declarations.bat
+│   │   ├── php-parse
+│   │   ├── php-parse.bat
+│   │   ├── phpunit
+│   │   ├── phpunit.bat
+│   │   ├── pint
+│   │   ├── pint.bat
+│   │   ├── psysh
+│   │   ├── psysh.bat
+│   │   ├── sail
+│   │   ├── sail.bat
+│   │   ├── var-dump-server
+│   │   ├── var-dump-server.bat
+│   │   ├── yaml-lint
+│   │   └── yaml-lint.bat
+│   ├── brick
+│   │   └── math
+│   ├── carbonphp
+│   │   └── carbon-doctrine-types
+│   ├── composer
+│   │   ├── ClassLoader.php
+│   │   ├── InstalledVersions.php
+│   │   ├── LICENSE
+│   │   ├── autoload_classmap.php
+│   │   ├── autoload_files.php
+│   │   ├── autoload_namespaces.php
+│   │   ├── autoload_psr4.php
+│   │   ├── autoload_real.php
+│   │   ├── autoload_static.php
+│   │   ├── installed.json
+│   │   ├── installed.php
+│   │   └── platform_check.php
+│   ├── dflydev
+│   │   └── dot-access-data
+│   ├── doctrine
+│   │   ├── inflector
+│   │   └── lexer
+│   ├── dragonmantank
+│   │   └── cron-expression
+│   ├── egulias
+│   │   └── email-validator
+│   ├── fakerphp
+│   │   └── faker
+│   ├── filp
+│   │   └── whoops
+│   ├── fruitcake
+│   │   └── php-cors
+│   ├── graham-campbell
+│   │   └── result-type
+│   ├── guzzlehttp
+│   │   ├── guzzle
+│   │   ├── promises
+│   │   ├── psr7
+│   │   └── uri-template
+│   ├── hamcrest
+│   │   └── hamcrest-php
+│   ├── laravel
+│   │   ├── framework
+│   │   ├── pail
+│   │   ├── pint
+│   │   ├── prompts
+│   │   ├── sail
+│   │   ├── serializable-closure
+│   │   └── tinker
+│   ├── league
+│   │   ├── commonmark
+│   │   ├── config
+│   │   ├── flysystem
+│   │   ├── flysystem-local
+│   │   ├── mime-type-detection
+│   │   ├── uri
+│   │   └── uri-interfaces
+│   ├── mockery
+│   │   └── mockery
+│   ├── monolog
+│   │   └── monolog
+│   ├── myclabs
+│   │   └── deep-copy
+│   ├── nesbot
+│   │   └── carbon
+│   ├── nette
+│   │   ├── schema
+│   │   └── utils
+│   ├── nikic
+│   │   └── php-parser
+│   ├── nunomaduro
+│   │   ├── collision
+│   │   └── termwind
+│   ├── phar-io
+│   │   ├── manifest
+│   │   └── version
+│   ├── phpoption
+│   │   └── phpoption
+│   ├── phpunit
+│   │   ├── php-code-coverage
+│   │   ├── php-file-iterator
+│   │   ├── php-invoker
+│   │   ├── php-text-template
+│   │   ├── php-timer
+│   │   └── phpunit
+│   ├── psr
+│   │   ├── clock
+│   │   ├── container
+│   │   ├── event-dispatcher
+│   │   ├── http-client
+│   │   ├── http-factory
+│   │   ├── http-message
+│   │   ├── log
+│   │   └── simple-cache
+│   ├── psy
+│   │   └── psysh
+│   ├── ralouphie
+│   │   └── getallheaders
+│   ├── ramsey
+│   │   ├── collection
+│   │   └── uuid
+│   ├── sebastian
+│   │   ├── cli-parser
+│   │   ├── code-unit
+│   │   ├── code-unit-reverse-lookup
+│   │   ├── comparator
+│   │   ├── complexity
+│   │   ├── diff
+│   │   ├── environment
+│   │   ├── exporter
+│   │   ├── global-state
+│   │   ├── lines-of-code
+│   │   ├── object-enumerator
+│   │   ├── object-reflector
+│   │   ├── recursion-context
+│   │   ├── type
+│   │   └── version
+│   ├── staabm
+│   │   └── side-effects-detector
+│   ├── symfony
+│   │   ├── clock
+│   │   ├── console
+│   │   ├── css-selector
+│   │   ├── deprecation-contracts
+│   │   ├── error-handler
+│   │   ├── event-dispatcher
+│   │   ├── event-dispatcher-contracts
+│   │   ├── finder
+│   │   ├── http-foundation
+│   │   ├── http-kernel
+│   │   ├── mailer
+│   │   ├── mime
+│   │   ├── polyfill-ctype
+│   │   ├── polyfill-intl-grapheme
+│   │   ├── polyfill-intl-idn
+│   │   ├── polyfill-intl-normalizer
+│   │   ├── polyfill-mbstring
+│   │   ├── polyfill-php80
+│   │   ├── polyfill-php83
+│   │   ├── polyfill-uuid
+│   │   ├── process
+│   │   ├── routing
+│   │   ├── service-contracts
+│   │   ├── string
+│   │   ├── translation
+│   │   ├── translation-contracts
+│   │   ├── uid
+│   │   ├── var-dumper
+│   │   └── yaml
+│   ├── theseer
+│   │   └── tokenizer
+│   ├── tijsverkoyen
+│   │   └── css-to-inline-styles
+│   ├── vlucas
+│   │   └── phpdotenv
+│   ├── voku
+│   │   └── portable-ascii
+│   └── webmozart
+│       └── assert
+└── vite.config.js
+
+184 directories, 103 files

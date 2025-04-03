@@ -1,3 +1,5 @@
+<?php
+
 use App\Http\Controllers\TurnoController;
 
 Route::prefix('turnos')->controller(TurnoController::class)->group(function () {
